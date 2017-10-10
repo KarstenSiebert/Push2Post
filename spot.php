@@ -1,19 +1,19 @@
 <?php
 
-	# Send messages to an individual recipient
+    # Send messages to an individual recipient
 		
-	$data = array (
+    $data = array (
         'head' => 'Title of message', 
         'text' => 'Short description of message', 
         'link' => 'Link to site or element (image, video, other) (or empty)',	# Appropriate app will be started to view / follow this link
         'icon' => 'Link to icon, which is displayed with message (or empty)',
-	    'shot' => 'Link to image file, which will be displayed underneath the message text (or empty)',
-	    'from' => 'From identifier (or empty)'	# Sender's key of the Spot app
-        );     
+	'shot' => 'Link to image file, which will be displayed underneath the message text (or empty)',
+	'from' => 'From identifier (or empty)'	# Sender's key of the Spot app
+    );     
 	
     $headers = array (
-		'Authorization: key=app-key',	# Recipient's key of the Spot app, has to match sender's key value - see 'from' field
-		'Content-Type: application/json'
+	'Authorization: key=app-key',	# Recipient's key of the Spot app, has to match sender's key value - see 'from' field
+	'Content-Type: application/json'
     );
 
     $ch = curl_init();
@@ -27,6 +27,6 @@
 
     curl_exec($ch);
 
-	curl_close($ch);
+    curl_close($ch);
 
 ?>
