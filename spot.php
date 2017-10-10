@@ -8,11 +8,11 @@
         'link' => 'Link to site or element (image, video, other) (or empty)',	# Appropriate app will be started to view / follow this link
         'icon' => 'Link to icon, which is displayed with message (or empty)',
 	'shot' => 'Link to image file, which will be displayed underneath the message text (or empty)',
-	'from' => 'From identifier (or empty)'	# Sender's key of the Spot app
+	'user' => 'User identifier'	# Recipient's key of the Spot app
     );     
 	
     $headers = array (
-	'Authorization: key=app-key',	# Recipient's key of the Spot app, has to match sender's key value - see 'from' field
+	'Authorization: key=app-key',	# Sender's key of the Spot app
 	'Content-Type: application/json'
     );
 
