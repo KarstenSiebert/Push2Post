@@ -12,5 +12,3 @@
 #  'user' => 'User identifier' # Recipient's key of the Spot app
 
 curl -H "Authorization: key=app-key" -H "Content-Type: application/json" -d '{"head":"Title of message","text":"Short description of message","user":"User identifier"}' https://spot.barubox.com/messagesSpot
-
-
